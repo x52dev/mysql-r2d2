@@ -1,10 +1,13 @@
 [package]
-name = "r2d2_mysql"
+name = "mysql-r2d2"
 version = "26.0.0"
-authors = ["outersky <outersky@gmail.com>"]
+authors = [
+    "outersky <outersky@gmail.com>",
+    "robjtede <robjtede@icloud.com>",
+]
 license = "MIT"
 description = "MySQL support for the r2d2 connection pool"
-repository = "https://github.com/outersky/r2d2-mysql"
+repository = "https://github.com/x52dev/mysql-r2d2"
 keywords = ["mysql", "sql", "pool", "database", "r2d2"]
 edition = "2021"
 rust-version = "1.81"
