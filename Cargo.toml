@@ -1,6 +1,6 @@
 [package]
 name = "mysql-r2d2"
-version = "26.0.0"
+version = "27.0.0"
 authors = [
     "outersky <outersky@gmail.com>",
     "robjtede <robjtede@icloud.com>",
@@ -9,9 +9,9 @@ license = "MIT"
 description = "MySQL support for the r2d2 connection pool"
 repository = "https://github.com/x52dev/mysql-r2d2"
 keywords = ["mysql", "sql", "pool", "database", "r2d2"]
-edition = "2021"
-rust-version = "1.81"
+edition = "2024"
+rust-version = "1.88"
 
 [dependencies]
 r2d2 = "0.8.9"
-mysql = { version = "26", default-features = false, features = ["minimal"] }
+mysql = { version = "27", default-features = false, features = ["minimal"] }
