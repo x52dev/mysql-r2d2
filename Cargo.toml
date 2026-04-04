@@ -10,5 +10,5 @@ edition = "2024"
 rust-version = "1.88"
 
 [dependencies]
-mysql = { version = "28", default-features = false, features = ["minimal"] }
+mysql = { version = "27", default-features = false, features = ["minimal"] }
 r2d2 = "0.8.9"
