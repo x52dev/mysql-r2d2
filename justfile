@@ -61,3 +61,11 @@ test: test-lib test-doc test-doc-compile
 # Run tests on MRSV.
 test-msrv: backup-lockfile && restore-lockfile
     @just toolchain="$(just --eval msrv_rustup)" downgrade-for-msrv test
+
+# Test workspace and generate Codecov coverage file
+test-coverage-codecov toolchain="":
+    cargo {{ toolchain }} llvm-cov --workspace --all-features --codecov --output-path codecov.json
+
+# Test workspace and generate LCOV coverage file
+test-coverage-lcov toolchain="":
+    cargo {{ toolchain }} llvm-cov --workspace --all-features --lcov --output-path lcov.info
