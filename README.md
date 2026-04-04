@@ -3,8 +3,8 @@
 <!-- prettier-ignore-start -->
 
 [![crates.io](https://img.shields.io/crates/v/mysql-r2d2?label=latest)](https://crates.io/crates/mysql-r2d2)
-[![Documentation](https://docs.rs/mysql-r2d2/badge.svg?version=27.0.1)](https://docs.rs/mysql-r2d2/27.0.1)
-[![dependency status](https://deps.rs/crate/mysql-r2d2/27.0.1/status.svg)](https://deps.rs/crate/mysql-r2d2/27.0.1)
+[![Documentation](https://docs.rs/mysql-r2d2/badge.svg?version=28.0.0)](https://docs.rs/mysql-r2d2/28.0.0)
+[![dependency status](https://deps.rs/crate/mysql-r2d2/28.0.0/status.svg)](https://deps.rs/crate/mysql-r2d2/28.0.0)
 ![MIT](https://img.shields.io/crates/l/mysql-r2d2.svg)
 <br />
 [![CI](https://github.com/x52dev/mysql-r2d2/actions/workflows/ci.yml/badge.svg)](https://github.com/x52dev/mysql-r2d2/actions/workflows/ci.yml)
