@@ -2,7 +2,7 @@
 
 > [`mysql`](https://github.com/blackbeam/rust-mysql-simple) support library for the [`r2d2`](https://github.com/sfackler/r2d2) connection pool.
 
-[![crates.io](https://img.shields.io/crates/v/mysql-r2c2?label=latest)](https://crates.io/crates/mysql-r2d2)
+[![crates.io](https://img.shields.io/crates/v/mysql-r2d2?label=latest)](https://crates.io/crates/mysql-r2d2)
 [![Documentation](https://docs.rs/mysql-r2d2/badge.svg?version=26)](https://docs.rs/mysql-r2d2)
 ![Version](https://img.shields.io/badge/rustc-1.88+-ab6000.svg)
 ![License](https://img.shields.io/crates/l/mysql-r2d2.svg)
@@ -13,7 +13,7 @@
 ```rust
 use std::{env, sync::Arc, thread};
 
-use r2d2_mysql::{
+use mysql_r2d2::{
     mysql::{prelude::*, Opts, OptsBuilder},
     r2d2, MySqlConnectionManager,
 };
