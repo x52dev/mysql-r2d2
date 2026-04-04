@@ -28,7 +28,15 @@ jobs:
         with:
           tool: just,cargo-llvm-cov
 
+      - name: Setup MySQL
+        uses: mirromutth/mysql-action@de1fba8b3f90ce8db80f663a7043be3cf3231248 # v1.1
+        with:
+          mysql user: "ci"
+          mysql password: "ci"
+
       - name: Generate code coverage
+        env:
+          DATABASE_URL: mysql://ci:ci@127.0.0.1:3306
         run: just test-coverage-codecov
 
       - name: Upload coverage to Codecov
