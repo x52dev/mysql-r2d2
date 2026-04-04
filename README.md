@@ -2,20 +2,11 @@
 
 > [`mysql`](https://github.com/blackbeam/rust-mysql-simple) support library for the [`r2d2`](https://github.com/sfackler/r2d2) connection pool.
 
-[![crates.io](https://img.shields.io/crates/v/r2d2_mysql?label=latest)](https://crates.io/crates/r2d2_mysql)
-[![Documentation](https://docs.rs/r2d2_mysql/badge.svg?version=26)](https://docs.rs/r2d2_mysql)
-![Version](https://img.shields.io/badge/rustc-1.81+-ab6000.svg)
-![License](https://img.shields.io/crates/l/r2d2_mysql.svg)
-[![Download](https://img.shields.io/crates/d/r2d2_mysql.svg)](https://crates.io/crates/r2d2_mysql)
-
-## Install
-
-Include `r2d2_mysql` in the `[dependencies]` section of your `Cargo.toml`:
-
-```toml
-[dependencies]
-r2d2_mysql = "24"
-```
+[![crates.io](https://img.shields.io/crates/v/mysql-r2c2?label=latest)](https://crates.io/crates/mysql-r2d2)
+[![Documentation](https://docs.rs/mysql-r2d2/badge.svg?version=26)](https://docs.rs/mysql-r2d2)
+![Version](https://img.shields.io/badge/rustc-1.88+-ab6000.svg)
+![License](https://img.shields.io/crates/l/mysql-r2d2.svg)
+[![Download](https://img.shields.io/crates/d/mysql-r2d2.svg)](https://crates.io/crates/mysql-r2d2)
 
 ## Usage
 
