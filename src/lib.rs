@@ -4,7 +4,7 @@
 //! ```
 //! use std::{env, sync::Arc, thread};
 //!
-//! use r2d2_mysql::{
+//! use mysql_r2d2::{
 //!     mysql::{prelude::*, Opts, OptsBuilder},
 //!     r2d2, MySqlConnectionManager,
 //! };
@@ -46,7 +46,7 @@ pub use self::pool::MySqlConnectionManager;
 mod test {
     use std::{env, sync::Arc, thread};
 
-    use mysql::{prelude::*, Opts, OptsBuilder};
+    use mysql::{Opts, OptsBuilder, prelude::*};
 
     use super::MySqlConnectionManager;
 

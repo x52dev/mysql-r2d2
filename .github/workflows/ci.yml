@@ -7,12 +7,18 @@ on:
     branches: [master]
 
 jobs:
+  read_msrv:
+    name: Read MSRV
+    uses: actions-rust-lang/msrv/.github/workflows/msrv.yml@8b553824444060021f2843d7b4d803f3624d15e5 # v0.1.0
+
   test:
+    needs: read_msrv
+
     strategy:
       fail-fast: false
       matrix:
         version:
-          - { name: msrv, version: 1.81.0 }
+          - { name: msrv, version: "${{ needs.read_msrv.outputs.msrv }}" }
           - { name: stable, version: stable }
           - { name: nightly, version: nightly }
 
@@ -27,6 +33,11 @@ jobs:
         with:
           toolchain: ${{ matrix.version.version }}
 
+      - name: Install just, nextest
+        uses: taiki-e/install-action@68675c5a5f1a6950c3975d33f3ae0ef155e5bf3d # v2.68.15
+        with:
+          tool: just,nextest
+
       - name: Setup MySQL
         uses: mirromutth/mysql-action@de1fba8b3f90ce8db80f663a7043be3cf3231248 # v1.1
         with:
@@ -35,9 +46,9 @@ jobs:
 
       - name: downgrades for MSRV
         if: matrix.version.name == 'msrv'
-        run: |
-          cargo update -p=idna_adapter --precise=1.2.0 # next ver: 1.82.0
+        run: just downgrade-for-msrv
 
-      - run: cargo test
+      - name: Test
         env:
           DATABASE_URL: mysql://ci:ci@127.0.0.1:3306
+        run: just test
