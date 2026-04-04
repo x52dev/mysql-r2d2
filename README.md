@@ -1,12 +1,20 @@
-# r2d2_mysql
+# `mysql-r2d2`
 
-> [`mysql`](https://github.com/blackbeam/rust-mysql-simple) support library for the [`r2d2`](https://github.com/sfackler/r2d2) connection pool.
+<!-- prettier-ignore-start -->
 
 [![crates.io](https://img.shields.io/crates/v/mysql-r2d2?label=latest)](https://crates.io/crates/mysql-r2d2)
-[![Documentation](https://docs.rs/mysql-r2d2/badge.svg?version=26)](https://docs.rs/mysql-r2d2)
-![Version](https://img.shields.io/badge/rustc-1.88+-ab6000.svg)
-![License](https://img.shields.io/crates/l/mysql-r2d2.svg)
+[![Documentation](https://docs.rs/mysql-r2d2/badge.svg?version=27.0.0)](https://docs.rs/mysql-r2d2/27.0.0)
+[![dependency status](https://deps.rs/crate/mysql-r2d2/27.0.0/status.svg)](https://deps.rs/crate/mysql-r2d2/27.0.0)
+![MIT](https://img.shields.io/crates/l/mysql-r2d2.svg)
+<br />
+[![CI](https://github.com/x52dev/mysql-r2d2/actions/workflows/ci.yml/badge.svg)](https://github.com/x52dev/mysql-r2d2/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/x52dev/mysql-r2d2/branch/main/graph/badge.svg)](https://codecov.io/gh/x52dev/mysql-r2d2)
+![Version](https://img.shields.io/badge/rustc-1.65+-ab6000.svg)
 [![Download](https://img.shields.io/crates/d/mysql-r2d2.svg)](https://crates.io/crates/mysql-r2d2)
+
+<!-- prettier-ignore-end -->
+
+> [`mysql`](https://github.com/blackbeam/rust-mysql-simple) support library for the [`r2d2`](https://github.com/sfackler/r2d2) connection pool.
 
 ## Usage
 
