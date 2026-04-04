@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-## 27.0.0
+## 27.0.1
 
 - Update `mysql` dependency to `27`.
 - Upgrade to Edition 2024.
